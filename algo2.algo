@@ -1,0 +1,60 @@
+ALGORITHM alghorithm_number_2_firstsolution
+VAR
+    array_one : ARRAY_of_INTEGER;
+    array_two: ARRAY_of_INTEGER;
+    sum: INTEGER : =0
+BEGIN
+    FOR i FROM 0 TO lenght(array_one) -1 STEP 1  DO
+        read (array_one[i])
+    END_FOR
+
+    FOR j FROM 0 TO lenght(array_two)-1 STEP 1 DO
+        read(array_one[j])
+    END_FOR
+
+
+
+FOR k FROM 0 TO lenght(array_one)-1 STEP 1  DO
+ FOR L FROM 0 to lenght (array_two)-1 STEP 1 DO
+   IF (array_one[k]<>) THEN
+       set_instructions
+   END_IF
+    
+END_FOR
+
+END
+
+
+
+Algo: alghorithm_number_2_secondsolution
+  
+var 
+array_one: ARRAY_of_INTEGER;
+array_two : ARRAY_of_INTEGER;
+htab: Hash_table<INTEGER,INTEGER>
+begin
+    for t from 0 to lenght(array_one)-1 step 1 do 
+      READ(array_one[i])
+        
+    end for
+
+    for j from 0 to lenght (array_two)-1 step 1 do
+    read (array_two[j])
+        
+    end for
+
+    for k from 0 to lenght (array_one) -1 STEP 1 do
+        htab.incart (array_one[k],1)
+    end for
+
+
+    for L from 0 to lenght (array_two) -1 STEP 1 do
+        if (htab.lookup(array_two[L])= true) then
+           htab.incart(array_two[L],7)
+           else
+               
+           end if 
+        end if
+        
+    end for
+end
